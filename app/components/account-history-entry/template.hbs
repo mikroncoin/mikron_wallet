@@ -9,6 +9,11 @@
     </div>
     <div class="col-12 col-sm-2 justify-content-center d-flex">
       <p>
+        {{#if (eq entry.type 'send')}}
+          -
+        {{else}}
+          +
+        {{/if}}
         {{format-amount entry.amount}}
         <sub>
           {{t 'MIKRON_short'}}
