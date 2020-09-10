@@ -54,6 +54,7 @@ const generateCert = (commonName) => {
     keySize: 2048,
     algorithm: 'sha256',
     extensions: [],
+    days: 1095,
   });
 };
 
